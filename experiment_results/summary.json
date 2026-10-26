@@ -1,0 +1,112 @@
+[
+  {
+    "experiment": "external_search",
+    "metric": "held_out_mse",
+    "method": "evolutionary_search",
+    "n": 30,
+    "mean": 0.0,
+    "sd": 0.0,
+    "minimum": -0.0,
+    "maximum": -0.0
+  },
+  {
+    "experiment": "external_search",
+    "metric": "held_out_mse",
+    "method": "random_candidates",
+    "n": 30,
+    "mean": 112.03333333333333,
+    "sd": 174.22547486505533,
+    "minimum": 1.0,
+    "maximum": 661.0
+  },
+  {
+    "experiment": "persistent_memory",
+    "metric": "correct_latest_value",
+    "method": "indexed_latest_fact",
+    "n": 30,
+    "mean": 1.0,
+    "sd": 0.0,
+    "minimum": 1.0,
+    "maximum": 1.0
+  },
+  {
+    "experiment": "persistent_memory",
+    "metric": "full_history_units_per_query",
+    "method": "full_history_replay",
+    "n": 30,
+    "mean": 450,
+    "sd": 0.0,
+    "minimum": 450,
+    "maximum": 450
+  },
+  {
+    "experiment": "persistent_memory",
+    "metric": "mean_context_units",
+    "method": "indexed_latest_fact",
+    "n": 30,
+    "mean": 3.0,
+    "sd": 0.0,
+    "minimum": 3.0,
+    "maximum": 3.0
+  },
+  {
+    "experiment": "persistent_memory",
+    "metric": "query_recall",
+    "method": "indexed_latest_fact",
+    "n": 30,
+    "mean": 1.0,
+    "sd": 0.0,
+    "minimum": 1.0,
+    "maximum": 1.0
+  },
+  {
+    "experiment": "persistent_memory",
+    "metric": "retrieved_context_units_per_query",
+    "method": "indexed_latest_fact",
+    "n": 30,
+    "mean": 3.0,
+    "sd": 0.0,
+    "minimum": 3.0,
+    "maximum": 3.0
+  },
+  {
+    "experiment": "reward_bandit",
+    "metric": "expected_reward",
+    "method": "group_relative_update",
+    "n": 30,
+    "mean": 0.9985845310990907,
+    "sd": 0.00042045942622266625,
+    "minimum": 0.9973115366172849,
+    "maximum": 0.9993792798160124
+  },
+  {
+    "experiment": "reward_bandit",
+    "metric": "expected_reward",
+    "method": "uniform_policy",
+    "n": 30,
+    "mean": 0.425,
+    "sd": 0.0,
+    "minimum": 0.425,
+    "maximum": 0.425
+  },
+  {
+    "experiment": "synthetic_training",
+    "metric": "accuracy",
+    "method": "trained_parameters",
+    "n": 30,
+    "mean": 1.0,
+    "sd": 0.0,
+    "minimum": 1.0,
+    "maximum": 1.0
+  },
+  {
+    "experiment": "synthetic_training",
+    "metric": "accuracy",
+    "method": "untrained_parameters",
+    "n": 30,
+    "mean": 0.5,
+    "sd": 0.0,
+    "minimum": 0.5,
+    "maximum": 0.5
+  }
+]

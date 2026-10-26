@@ -1,0 +1,12 @@
+﻿experiment,metric,method,n,mean,sd,minimum,maximum
+external_search,held_out_mse,evolutionary_search,30,0.0,0.0,-0.0,-0.0
+external_search,held_out_mse,random_candidates,30,112.03333333333333,174.22547486505533,1.0,661.0
+persistent_memory,correct_latest_value,indexed_latest_fact,30,1.0,0.0,1.0,1.0
+persistent_memory,full_history_units_per_query,full_history_replay,30,450,0.0,450,450
+persistent_memory,mean_context_units,indexed_latest_fact,30,3.0,0.0,3.0,3.0
+persistent_memory,query_recall,indexed_latest_fact,30,1.0,0.0,1.0,1.0
+persistent_memory,retrieved_context_units_per_query,indexed_latest_fact,30,3.0,0.0,3.0,3.0
+reward_bandit,expected_reward,group_relative_update,30,0.9985845310990907,0.00042045942622266625,0.9973115366172849,0.9993792798160124
+reward_bandit,expected_reward,uniform_policy,30,0.425,0.0,0.425,0.425
+synthetic_training,accuracy,trained_parameters,30,1.0,0.0,1.0,1.0
+synthetic_training,accuracy,untrained_parameters,30,0.5,0.0,0.5,0.5

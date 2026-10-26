@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "name": "AILA",
+    "title": "Evaluating large language model agents for automation of atomic force microscopy\n中文标题：评估大语言模型智能体在原子力显微镜自动化中的应用",
+    "doi": "https://doi.org/10.1038/s41467-025-64105-7",
+    "mechanism": "固定路由、工具调用和环境反馈",
+    "update_target": "动作/实验计划",
+    "demos": "coordination, revision",
+    "not_implemented": "没有实现AFM仪器、LLM路由和AFMBench",
+    "source_location": "正式期刊PDF：Fig. 1–3、AILA工作流、AFMBench、单代理与多代理比较，以及Supplementary Information §S6。注意该直接对照只覆盖所报告的子集和模型。"
+  },
+  {
+    "id": 2,
+    "name": "协作收益边界",
+    "title": "Capable language models can outgrow the benefits of collaboration\n中文标题：能力更强的语言模型可能不再从协作中获益",
+    "doi": "https://doi.org/10.1038/s42256-026-01268-y",
+    "mechanism": "比较组织方式；本身不是新的学习更新规则",
+    "update_target": "实验配置",
+    "demos": "coordination",
+    "not_implemented": "没有实现论文的通信结构、模型家族和260配置评估",
+    "source_location": "主文架构比较与Methods；PDF后部“Structural ablations”及通信设计说明。注意其跨任务关系分析不等于无限外推。\nEnglish: The experimental variable is team organization and information flow, not the agents’ model weights."
+  },
+  {
+    "id": 3,
+    "name": "MAP",
+    "title": "A brain-inspired agentic architecture to improve planning with LLMs\n中文标题：一种受脑启发、用于改进大语言模型规划的智能体架构",
+    "doi": "https://doi.org/10.1038/s41467-025-63804-5",
+    "mechanism": "功能模块规划与合法性监测",
+    "update_target": "当前计划/搜索状态",
+    "demos": "planning",
+    "not_implemented": "BFS仅展示模块分工，没有实现LLM状态预测和原任务",
+    "source_location": "PDF约第6页，Table 1与Table 2；架构图、Methods及各规划任务说明。\nEnglish: The architecture changes inference-time roles, information flow, and search, without showing online weight updates."
+  },
+  {
+    "id": 4,
+    "name": "LegoNE",
+    "title": "Discovering expert-level Nash equilibrium algorithms with large language models\n中文标题：利用大语言模型发现专家级纳什均衡算法",
+    "doi": "https://doi.org/10.1038/s41467-026-74003-1",
+    "mechanism": "候选算法生成、编译反馈、理论评价",
+    "update_target": "候选算法",
+    "demos": "search",
+    "not_implemented": "用线性程序变异代替LLM；没有纳什均衡模块或理论证明器",
+    "source_location": "正式期刊PDF：Fig. 1的LLM—LegoNE反馈循环；Results中的保证值和对照算法；Methods中的多阶段提示、编译错误反馈与专家提供的模块。"
+  },
+  {
+    "id": 5,
+    "name": "Coscientist",
+    "title": "Autonomous chemical research with large language models\n中文标题：利用大语言模型开展自主化学研究",
+    "doi": "https://doi.org/10.1038/s41586-023-06792-0",
+    "mechanism": "工具执行与实验反馈闭环",
+    "update_target": "实验方案/条件",
+    "demos": "coordination, revision",
+    "not_implemented": "没有实验设备、反应优化和论文提示词",
+    "source_location": "主文系统架构、工具能力及反应优化实验；Fig. 6（约PDF第8页）。与第10篇Co-Scientist不是同一系统。\nEnglish: The system mainly updates experimental conditions, plans, and recorded context, not the GPT-4 weights."
+  },
+  {
+    "id": 6,
+    "name": "ChemCrow",
+    "title": "Augmenting large language models with chemistry tools\n中文标题：用化学工具增强大语言模型",
+    "doi": "https://doi.org/10.1038/s42256-024-00832-8",
+    "mechanism": "工具增强推理",
+    "update_target": "当前执行轨迹",
+    "demos": "coordination",
+    "not_implemented": "只有算术工具路由；没有化学工具；不是多智能体训练",
+    "source_location": "主文ChemCrow流程、工具集、评价部分；Methods中工具说明。\nEnglish: Tool access and the current execution trace change, while the LLM weights remain untouched."
+  },
+  {
+    "id": 7,
+    "name": "CASSIA",
+    "title": "CASSIA: a multi-agent large language model for automated and interpretable cell annotation\n中文标题：CASSIA：用于自动且可解释细胞注释的多智能体大语言模型",
+    "doi": "https://doi.org/10.1038/s41467-025-67084-x",
+    "mechanism": "注释、验证、质量评分与修订",
+    "update_target": "当前注释",
+    "demos": "revision",
+    "not_implemented": "已知数字目标代替细胞标注；没有生物数据与LLM验证",
+    "source_location": "正式PDF Methods约第11—12页：Annotation、Validation、Quality scoring；主文讨论及Supplementary Note 6入口。期刊卷期年份为2026，DOI含2025不代表出版年。\nEnglish: The system revises the current annotations and explanations; it does not fine-tune the base LLM after each task."
+  },
+  {
+    "id": 8,
+    "name": "FunSearch",
+    "title": "Mathematical discoveries from program search with large language models\n中文标题：利用大语言模型进行程序搜索以发现数学规律",
+    "doi": "https://doi.org/10.1038/s41586-023-06924-6",
+    "mechanism": "生成、执行评价、保存优良程序、再生成",
+    "update_target": "程序群体",
+    "demos": "search",
+    "not_implemented": "没有LLM程序生成、岛屿迁移和原数学任务",
+    "source_location": "主文Fig. 1、program database；Methods中island-based approach及评价器。在线发表于2023年12月，正式卷期为2024。\nEnglish: The program population and generated code change, while the underlying language model remains frozen."
+  },
+  {
+    "id": 9,
+    "name": "G-Frame / OmniChem",
+    "title": "Game theory driven multi-agent framework mitigates language model hallucination\n中文标题：基于博弈论的多智能体框架缓解语言模型幻觉",
+    "doi": "https://doi.org/10.1038/s41467-026-78213-5",
+    "mechanism": "博弈驱动多代理数据生成与下游训练",
+    "update_target": "数据集/受训模型权重",
+    "demos": "supervised",
+    "not_implemented": "仅生成—验证—训练链条；没有team/Bayesian game和Qwen训练",
+    "source_location": "正式期刊PDF：§2、Fig. 1–3、Methods中的Team/Bayesian games伪代码及训练阶段分析；引用以本条DOI为准。\nEnglish: The framework changes workflow decisions and also updates the downstream model’s parameters."
+  },
+  {
+    "id": 10,
+    "name": "Co-Scientist",
+    "title": "Accelerating scientific discovery with Co-Scientist\n中文标题：利用Co-Scientist加速科学发现",
+    "doi": "https://doi.org/10.1038/s41586-026-10644-y",
+    "mechanism": "生成、批评、锦标赛排序与假说进化",
+    "update_target": "假说/评审记录",
+    "demos": "search, revision",
+    "not_implemented": "仅候选搜索类比；没有Elo锦标赛、文献检索和实验验证",
+    "source_location": "正式期刊PDF（含补充材料）：Fig. 1、tournament/evolution、test-time compute评价与三类应用验证。\nEnglish: The system updates candidate hypotheses, review records, rankings, and search direction, not the Gemini weights."
+  },
+  {
+    "id": 11,
+    "name": "X-ray scientist",
+    "title": "An agentic artificially intelligent X-ray scientist\n中文标题：具有智能体能力的人工智能X射线科学家",
+    "doi": "https://doi.org/10.1038/s42256-026-01261-5",
+    "mechanism": "工具控制与环境反馈",
+    "update_target": "仪器动作/任务状态",
+    "demos": "revision",
+    "not_implemented": "没有真实仪器；不引入新的学习算法",
+    "source_location": "主文系统示意、模拟/真实设备实验与Discussion；PDF约第7页关于不引入新学习算法及不微调LLM的说明。\nEnglish: The system changes experiment settings, action plans, and task state; the paper reports neither a new learning algorithm nor LLM fine-tuning."
+  },
+  {
+    "id": 12,
+    "name": "LLM-RDF",
+    "title": "An automatic end-to-end chemical synthesis development platform powered by large language models\n中文标题：由大语言模型驱动的自动端到端化学合成开发平台",
+    "doi": "https://doi.org/10.1038/s41467-024-54457-x",
+    "mechanism": "多角色编排加外部优化器",
+    "update_target": "实验参数/优化器状态",
+    "demos": "coordination, search",
+    "not_implemented": "没有反应优化器、人类衔接和端到端化学任务",
+    "source_location": "Fig. 1；Results开头“LLM-based agents for end-to-end chemical synthesis reaction development”；Methods及反应优化实验。\nEnglish: Prompts and documents define roles; runtime changes mainly affect plans, records, and optimizer state rather than GPT-4 weights."
+  },
+  {
+    "id": 13,
+    "name": "DeepSeek-R1",
+    "title": "DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning\n中文标题：DeepSeek-R1通过强化学习激发大语言模型的推理能力",
+    "doi": "https://doi.org/10.1038/s41586-025-09422-z",
+    "mechanism": "组内相对奖励的强化学习；完整R1含多训练阶段",
+    "update_target": "模型权重",
+    "demos": "reward",
+    "not_implemented": "单步4动作策略，仅展示组优势、旧策略比率、裁剪、精确KL；不是token级GRPO",
+    "source_location": "主文R1-Zero、R1训练流程及Methods中的GRPO；补充材料入口见论文末尾。\nEnglish: The model parameters change directly, providing a clear example of persistent learning in a single model."
+  },
+  {
+    "id": 14,
+    "name": "AMIE诊断",
+    "title": "Towards conversational diagnostic artificial intelligence\n中文标题：面向对话式诊断的人工智能",
+    "doi": "https://doi.org/10.1038/s41586-025-08866-7",
+    "mechanism": "多角色模拟交互形成训练数据，再微调；推理时另有修订",
+    "update_target": "数据/模型权重/当前回复",
+    "demos": "supervised, revision",
+    "not_implemented": "规则算术角色代替自我对话，没有临床病例、LLM训练或临床评测",
+    "source_location": "期刊Methods“Simulated learning through self-play”与推理策略；正式期刊PDF：Methods中“Simulated learning through self-play”与推理策略。正式版引用以上DOI。\nEnglish: The method iterates training data and changes model weights, while deployment can also revise the current response."
+  },
+  {
+    "id": 15,
+    "name": "AMIE疾病管理",
+    "title": "Towards conversational artificial intelligence for disease management\n中文标题：面向疾病管理的对话式人工智能",
+    "doi": "https://doi.org/10.1038/s41586-026-10764-5",
+    "mechanism": "后训练、双代理编排、检索与纵向状态",
+    "update_target": "权重/流程/患者状态",
+    "demos": "supervised, coordination, memory",
+    "not_implemented": "拆开演示组件；没有复现完整混合系统；记忆算法是本项目设计",
+    "source_location": "Fig. 1–3；Methods：Dialogue agent/Posttraining、Agent state、Mx agent；主文“Ablations of model and agents”、Extended Data Fig. 2；完整消融细节指向Supplementary Information。\nEnglish: The system changes model weights, orchestration and retrieval settings, and patient-specific state at different layers."
+  }
+]
