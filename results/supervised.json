@@ -1,0 +1,8 @@
+{
+  "before_accuracy": 0.5,
+  "after_accuracy": 1.0,
+  "accepted_samples": 104,
+  "retained": "supervised_weights.json",
+  "parameters": 8,
+  "note": "真正更新8个标量参数；不是LLM微调，也不是临床自博弈。"
+}

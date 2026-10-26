@@ -1,0 +1,19 @@
+{
+  "history_rows": 102,
+  "full_history_units": 806,
+  "retrieval": {
+    "context": "user_tea: black",
+    "units": 3,
+    "matches": [
+      {
+        "event_id": 102,
+        "key": "user_tea",
+        "value": "black",
+        "text": "user_tea: black"
+      }
+    ],
+    "matched_candidates": 1
+  },
+  "original_versions_preserved": true,
+  "note": "构造的精确键查询；units不是计费token。没有真实对话记忆准确率证据。"
+}

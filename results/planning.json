@@ -1,0 +1,36 @@
+{
+  "path": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      3
+    ]
+  ],
+  "expanded": 7,
+  "algorithm": "breadth-first search",
+  "weight_updates": 0,
+  "note": "BFS教学替身；不声称实现原文LLM规划器。"
+}

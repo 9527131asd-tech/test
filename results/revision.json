@@ -1,0 +1,49 @@
+{
+  "mechanism": "task-local revision",
+  "trace": [
+    {
+      "step": 0,
+      "value": 0,
+      "feedback": "too_low"
+    },
+    {
+      "step": 1,
+      "value": 1,
+      "feedback": "too_low"
+    },
+    {
+      "step": 2,
+      "value": 2,
+      "feedback": "too_low"
+    },
+    {
+      "step": 3,
+      "value": 3,
+      "feedback": "too_low"
+    },
+    {
+      "step": 4,
+      "value": 4,
+      "feedback": "too_low"
+    },
+    {
+      "step": 5,
+      "value": 5,
+      "feedback": "too_low"
+    },
+    {
+      "step": 6,
+      "value": 6,
+      "feedback": "too_low"
+    },
+    {
+      "step": 7,
+      "value": 7,
+      "feedback": "accepted"
+    }
+  ],
+  "answer": 7,
+  "baseline_without_feedback": 0,
+  "new_session_initial_value": 0,
+  "note": "验证器用已知目标给反馈；这是人工构造任务，不是LLM批评。"
+}

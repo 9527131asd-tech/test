@@ -1,0 +1,18 @@
+{
+  "mechanism": "fixed orchestration",
+  "results": [
+    {
+      "mode": "single_tool_router",
+      "accuracy": 1.0,
+      "tool_calls": 56,
+      "weight_updates": 0
+    },
+    {
+      "mode": "specialist_router",
+      "accuracy": 1.0,
+      "tool_calls": 56,
+      "weight_updates": 0
+    }
+  ],
+  "note": "两个规则路由器同样正确；不预设多代理收益。未模拟LLM协作。"
+}
